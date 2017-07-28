@@ -1,5 +1,3 @@
-# RaghuNath (RaNa)
-
 
 ## rlib ##
 * Please visit the wiki page for rlib [here](https://bitbucket.org/saras152/rlib/wiki).
