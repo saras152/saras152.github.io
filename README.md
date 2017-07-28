@@ -1,9 +1,5 @@
-# saras152.github.io
-
 # RaghuNath (RaNa)
 
-
-# My activities #
 
 ## rlib ##
 * Please visit the wiki page for rlib [here](https://bitbucket.org/saras152/rlib/wiki).
