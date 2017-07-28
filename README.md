@@ -1,6 +1,6 @@
 [//]: # (Image References)
 [Logo]: ./images/rlib-logo_avatar.png "Logo"
-[Wires]: ./images/wires_in_slots1.png "Wires"
+[Wires]: ./images/wires_in_slots1.jpg "Wires"
 [Circles]: ./images/circles_packed.png "Circles"
 
 ## rlib ##
