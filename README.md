@@ -24,8 +24,11 @@
 ![alt text][CompVision]
 
 
-## Spirographs and Harmonographs
+## Spirographs and Harmonographs ##
 * Created MATLAB script to generate some images for fun! The images are [here](https://bitbucket.org/saras152/harmonograph/wiki).
 
 ![alt text][spirograph]
 ![alt text][harmonograph]
+
+## Stochastic Modelling ##
+* Attempted stochastic modelling for sales prediction. The wiki is [here](https://bitbucket.org/saras152/marketmodellingstochastic/wiki/Home).
