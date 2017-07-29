@@ -5,6 +5,7 @@
 [CompVision]: ./images/compvisionresult.png "Computer Vision"
 [spirograph]: ./images/spirograph.png "Spirograph"
 [harmonograph]: ./images/harmonograph.png "Harmonograph"
+[stochasticmodelling]: ./images/stochasticmodelling.png "Stochastic Modelling"
 
 ## rlib ##
 * Please visit the wiki page for rlib [here](https://bitbucket.org/saras152/rlib/wiki).
@@ -32,3 +33,5 @@
 
 ## Stochastic Modelling ##
 * Attempted stochastic modelling for sales prediction. The wiki is [here](https://bitbucket.org/saras152/marketmodellingstochastic/wiki/Home).
+
+![alt text][stochasticmodelling]
