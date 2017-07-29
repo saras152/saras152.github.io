@@ -3,6 +3,8 @@
 [Wires]: ./images/wires_in_slots1.jpg "Wires"
 [Circles]: ./images/circles_packed.png "Circles"
 [CompVision]: ./images/compvisionresult.png "Computer Vision"
+[spirograph]: ./images/spirograph.png "Spirograph"
+[harmonograph]: ./images/harmonograph.png "Harmonograph"
 
 ## rlib ##
 * Please visit the wiki page for rlib [here](https://bitbucket.org/saras152/rlib/wiki).
@@ -15,8 +17,15 @@
 
 ![alt text][Circles]
 
+
 ## Computer Vision ##
 * The jupyter notebook code with python script for detecting lane lines on the road is [here](https://github.com/saras152/Finding_Lane_Lines_on_the_Road).
 
 ![alt text][CompVision]
 
+
+## Spirographs and Harmonographs
+* Created MATLAB script to generate some images for fun! The images are [here](https://bitbucket.org/saras152/harmonograph/wiki).
+
+![alt text][spirograph]
+![alt text][harmonograph]
