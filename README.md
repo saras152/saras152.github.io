@@ -7,6 +7,7 @@
 [harmonograph]: ./images/harmonograph.png "Harmonograph"
 [stochasticmodelling]: ./images/stochasticmodelling.gif "Stochastic Modelling"
 [swlayers]: ./images/swlayers.png "Layered approach"
+[swlayers1]: ./images/RaNa_Target_Abstraction_Bootloader.png "layered approach"
 
 ## rlib ##
 This is an attempt to use opensource software to design electric machines. Used Scilab and FEMM for generating variety of machine designs in 2D and analyzed. Further, these models are dynamically generated to feed the the optimization routine. The optimization routine is based on random walk methods. Please visit the wiki page for rlib [HERE](https://bitbucket.org/saras152/rlib/wiki).
@@ -40,6 +41,7 @@ Attempted stochastic modelling for sales prediction. The wiki is [HERE](https://
 ## Embedded Systems ##
 
 ![Layered approach][swlayers]
+![Layered approach][swlayers1]
 
 ### Embedded File System Drivers ###
 Device Driver implementation for FAT32 File System. The corresponding wiki is [HERE](https://bitbucket.org/saras152/filesystem_fat/wiki/Home).
