@@ -8,19 +8,19 @@
 [stochasticmodelling]: ./images/stochasticmodelling.png "Stochastic Modelling"
 
 ## rlib ##
-* Please visit the wiki page for rlib [here](https://bitbucket.org/saras152/rlib/wiki).
+* This is an attempt to use opensource software to design electric machines. Used Scilab and FEMM for generating variety of machine designs in 2D and analyzed. Further, these models are dynamically generated to feed the the optimization routine. The optimization routine is based on random walk methods. Please visit the wiki page for rlib [here](https://bitbucket.org/saras152/rlib/wiki).
 
 ![alt text][Logo]
 ![alt text][Wires]
 
-## circle packing ##
-* Circle packing algo that was used in rlib is [here](https://github.com/saras152/circle_packing).
+## Polygon packing ##
+* The 2D analysis for rlib required placing the wires in the motor slots, in some cases. I attempted to create circles in polygon. The wiki for it is [here](https://bitbucket.org/saras152/polygon_packing/wiki/Home).
 
 ![alt text][Circles]
 
 
 ## Computer Vision ##
-* The jupyter notebook code with python script for detecting lane lines on the road is [here](https://github.com/saras152/Finding_Lane_Lines_on_the_Road).
+* The jupyter notebook code with python script for detecting lane lines on the road is [here](https://github.com/saras152/Finding_Lane_Lines_on_the_Road). The readme.md describes the techniques used and some of the barriers crossed.
 
 ![alt text][CompVision]
 
