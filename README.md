@@ -1,7 +1,7 @@
 [//]: # (Image References)
 [Logo]: ./images/rlib-logo_avatar.png "Logo"
 [Wires]: ./images/wires_in_slots1.jpg "Wires"
-[Circles]: ./images/circles_packed.png "Circles"
+[Circles]: ./images/circlepacking.gif "Circles"
 [CompVision]: ./images/compvisionresult.png "Computer Vision"
 [spirograph]: ./images/spirograph.png "Spirograph"
 [harmonograph]: ./images/harmonograph.png "Harmonograph"
