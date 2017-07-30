@@ -2,7 +2,6 @@
 [Logo]: ./images/rlib-logo_avatar.png "Logo"
 [Wires]: ./images/wires_in_slots1.jpg "Wires"
 [Circles]: ./images/circlepacking.gif "Circles"
-[CompVision]: ./images/compvisionresult.png "Computer Vision"
 [lanelines]: ./images/lanelines.gif "LaneLines"
 [spirograph]: ./images/spirograph.png "Spirograph"
 [harmonograph]: ./images/harmonograph.png "Harmonograph"
@@ -23,7 +22,7 @@
 ## Computer Vision ##
 * The jupyter notebook code with python script for detecting lane lines on the road is [here](https://github.com/saras152/Finding_Lane_Lines_on_the_Road). The readme.md describes the techniques used and some of the barriers crossed.
 
-![alt text][CompVision]![alt text][lanelines]
+![alt text][lanelines]
 
 
 ## Spirographs and Harmonographs ##
