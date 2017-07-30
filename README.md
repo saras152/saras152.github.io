@@ -34,4 +34,4 @@
 ## Stochastic Modelling ##
 * Attempted stochastic modelling for sales prediction. The wiki is [here](https://bitbucket.org/saras152/marketmodellingstochastic/wiki/Home).
 
-![alt text][stochasticmodelling]
+![Stochastic Modelling GIF][stochasticmodelling]
