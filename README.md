@@ -6,7 +6,7 @@
 [spirograph]: ./images/spirograph.png "Spirograph"
 [harmonograph]: ./images/harmonograph.png "Harmonograph"
 [stochasticmodelling]: ./images/stochasticmodelling.gif "Stochastic Modelling"
-[swlayers]: ./images/swlayers.gif "Layered approach"
+[swlayers]: ./images/swlayers.png "Layered approach"
 
 ## rlib ##
 This is an attempt to use opensource software to design electric machines. Used Scilab and FEMM for generating variety of machine designs in 2D and analyzed. Further, these models are dynamically generated to feed the the optimization routine. The optimization routine is based on random walk methods. Please visit the wiki page for rlib [HERE](https://bitbucket.org/saras152/rlib/wiki).
