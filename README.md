@@ -1,5 +1,5 @@
 [//]: # (Image References)
-[Logo]: ./images/rlib-logo_avatar.png "Logo"
+[prius]: ./images/Prius_animated.gif "Toyota Prius"
 [Wires]: ./images/wires_in_slots1.jpg "Wires"
 [Circles]: ./images/circlepacking.gif "Circles"
 [lanelines]: ./images/lanelines.gif "LaneLines"
@@ -12,8 +12,7 @@
 # rlib #
 This is an attempt to use opensource software to design electric machines. Used Scilab and FEMM for generating variety of machine designs in 2D and analyzed. Further, these models are dynamically generated to feed the the optimization routine. The optimization routine is based on random walk methods. Please visit the wiki page for rlib [HERE](https://bitbucket.org/saras152/rlib/wiki).
 
-![alt text][Logo]
-![alt text][Wires]
+![alt text][Wires]![alt text][prius]
 
 # Polygon packing #
 The 2D analysis for rlib required placing the wires in the motor slots, in some cases. I attempted to create circles in polygon. The wiki for it is [HERE](https://bitbucket.org/saras152/polygon_packing/wiki/Home).
