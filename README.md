@@ -8,6 +8,23 @@
 [swlayers]: ./images/swlayers.png "Layered approach"
 [swlayers1]: ./images/RaNa_Target_Abstraction_Bootloader.png "layered approach"
 
+I have many areas of interest - both technical and non-technical, just like everyone else. Below are some of the areas that I worked on which can be showcased. 
+
+Please feel free to contact me via email: hex2ascii(0x72 0x61 0x67 0x68 0x75 0x2e 0x65 0x6c 0x65 0x63 0x40 0x67 0x6d 0x61 0x69 0x6c 0x2e 0x63 0x6f 0x6d) (written in hex just to avoid detection by web crawlers)
+
+## ToC ##
+
+[Electromagnetics](#electromagnetics)
+
+[Embedded Systems](#embedded-systems)
+
+[Computer Vision](#computer-vision)
+
+[Statistical Modelling](#statistical-modelling)
+
+[Fun with Shapes](#fun-with-shapes)
+
+
 # Electromagnetics #
 
 ### Electric Machine Design ###
