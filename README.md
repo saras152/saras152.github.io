@@ -10,7 +10,7 @@
 
 I have many areas of interest - both technical and non-technical, just like everyone else. Below are some of the areas that I worked on which can be showcased. 
 
-Please feel free to contact me via email: hex2ascii(0x72 0x61 0x67 0x68 0x75 0x2e 0x65 0x6c 0x65 0x63 0x40 0x67 0x6d 0x61 0x69 0x6c 0x2e 0x63 0x6f 0x6d) (written in hex just to avoid detection by web crawlers)
+My email: hex2ascii(0x72 0x61 0x67 0x68 0x75 0x2e 0x65 0x6c 0x65 0x63 0x40 0x67 0x6d 0x61 0x69 0x6c 0x2e 0x63 0x6f 0x6d) (written in hex just to avoid detection by web crawlers)
 
 ## ToC ##
 
@@ -29,7 +29,7 @@ Please feel free to contact me via email: hex2ascii(0x72 0x61 0x67 0x68 0x75 0x2
 
 ### Electric Machine Design ###
 
-I like open source software. I attempted to use [Scilab](https://www.scilab.org/) and [FEMM](http://www.femm.info/wiki/HomePage) to build my personal tool to generate variety of elecitrc machines of Surface mounted PMBLDC Motors (inner rotor, outer rotor) and IPM Motors (inner rotor so far), Synchronous Reluctance Motors (inner rotor so far). Also implemented parallel FEA computations for faster characterization of the motors. These models can be dynamically generated and can be fed to the optimization routine that I implemented based on random walk methods. Please visit the wiki page for rlib [HERE](https://bitbucket.org/saras152/rlib/wiki).
+I like open source software. I attempted to use [Scilab](https://www.scilab.org/) and [FEMM](http://www.femm.info/wiki/HomePage) to build my personal tool to generate variety of elecitrc machines of BLDC Motors with surface mounted magnets (inner rotor, outer rotor), IPM Motors (inner rotor so far) and Synchronous Reluctance Motors (inner rotor so far). Also implemented parallel FEA computations for faster characterization of the motors. These models can be dynamically generated and can be fed to the optimization routine that I implemented based on random walk methods. I call this tool "rlib".  Please visit the wiki page for rlib [HERE](https://bitbucket.org/saras152/rlib/wiki).
 
 ![alt text][Wires]
 <img src="./images/Prius_animated.gif" width="170" alt="Toyota Prius Traction Motor - |B| vs theta">
@@ -71,6 +71,4 @@ Created MATLAB script to generate some images for fun! The images are [HERE](htt
 
 ![alt text][spirograph]
 ![alt text][harmonograph]
-
-
 
