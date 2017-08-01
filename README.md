@@ -22,6 +22,7 @@ I like open source software. I attempted to use [Scilab](https://www.scilab.org/
 This is my attempt at magnetic gears with FEA simulations. Wiki page is coming up.
 
 # Embedded Systems #
+
 ![Layered approach][swlayers]![Layered approach][swlayers1]
 
 ### Embedded File System Drivers ###
@@ -33,10 +34,12 @@ Implemented the USB HOST drivers on microcontroller ( already has USB physical l
 # Computer Vision #
 
 I tried to work with OpenCV and tried to detect the lanelines on the road. In the wiki page linked below, i tried to address few issues solved and listed possible improvements. The jupyter notebook with preliminary implementation of the algorithm using python script for detecting lane lines on the road is [HERE](https://github.com/saras152/Finding_Lane_Lines_on_the_Road). 
+
 ![alt text][lanelines]
 
 # Statistical Modelling #
 I attempted stochastic modelling for sales prediction. The wiki below also include a paper I tried to make out of the work done for this. The wiki is [HERE](https://bitbucket.org/saras152/marketmodellingstochastic/wiki/Home).
+
 ![Stochastic Modelling GIF][stochasticmodelling]
 
 # Fun with Shapes #
