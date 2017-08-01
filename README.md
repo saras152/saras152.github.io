@@ -10,7 +10,7 @@
 
 I have many areas of interest - both technical and non-technical, just like everyone else. Below are some of the areas that I worked on which can be showcased. 
 
-##### e-mail:hex2ascii(0x72 0x61 0x67 0x68 0x75 0x2e 0x65 0x6c 0x65 0x63 0x40 0x67 0x6d 0x61 0x69 0x6c 0x2e 0x63 0x6f 0x6d) (written in hex just to avoid detection by web crawlers) #####
+##### e-mail:hex2ascii(72h 61h 67h 68h 75h 2Eh 65h 6Ch 65h 63h 40h 67h 6Dh 61h 69h 6Ch 2Eh 63h 6Fh 6Dh) (written in hex just to avoid detection by web crawlers) #####
 
 
 
