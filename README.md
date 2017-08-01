@@ -8,7 +8,7 @@
 [swlayers]: ./images/swlayers.png "Layered approach"
 [swlayers1]: ./images/RaNa_Target_Abstraction_Bootloader.png "layered approach"
 
-# Electro Magnetics #
+# Electromagnetics #
 
 ### Electric Machine Design ###
 
