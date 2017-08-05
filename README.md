@@ -27,11 +27,11 @@ I have many areas of interest - both technical and non-technical, just like ever
 [Fun with Shapes](#fun-with-shapes)
 
 
-# Electromagnetics #
+# Electro Mechanical Systems #
 
 ### Electric Machine Design ###
 
-I like open source software. I attempted to use [Scilab](https://www.scilab.org/) and [FEMM](http://www.femm.info/wiki/HomePage) to build my personal tool to generate variety of elecitrc machines of BLDC Motors with surface mounted magnets (inner rotor, outer rotor), IPM Motors (inner rotor so far) and Synchronous Reluctance Motors (inner rotor so far). Also implemented parallel FEA computations for faster characterization of the motors. These models can be dynamically generated and can be fed to the optimization routine that I implemented based on random walk methods. I call this tool "rlib".  Please visit the wiki page for rlib [HERE](https://bitbucket.org/saras152/rlib/wiki).
+I like to work with open source software. I used [Scilab](https://www.scilab.org/) and [FEMM](http://www.femm.info/wiki/HomePage) to build my personal tool to generate variety of elecitrc machines of BLDC Motors with surface mounted magnets (inner rotor, outer rotor), IPM Motors (inner rotor so far) and Synchronous Reluctance Motors (inner rotor so far). Also implemented parallel FEA computations for faster characterization of the motors. These models can be dynamically generated and can be fed to the optimization routine that I implemented based on random walk methods. I call this tool "rlib".  Please visit the wiki page for rlib [HERE](https://bitbucket.org/saras152/rlib/wiki).
 
 ![alt text][Wires]
 <img src="./images/Prius_animated.gif" width="170" alt="Toyota Prius Traction Motor - |B| vs theta">
@@ -52,7 +52,7 @@ Implemented the USB HOST drivers on microcontroller ( already has USB physical l
 
 # Computer Vision #
 
-I tried to work with OpenCV and tried to detect the lanelines on the road. In the wiki page linked below, i tried to address few issues solved and listed possible improvements. The jupyter notebook with preliminary implementation of the algorithm using python script for detecting lane lines on the road is [HERE](https://github.com/saras152/Finding_Lane_Lines_on_the_Road). 
+I worked with OpenCV and tried to detect the lanelines on the road. In the wiki page linked below, I addressed few issues solved and listed possible improvements. The jupyter notebook with preliminary implementation of the algorithm using python script for detecting lane lines on the road is [HERE](https://github.com/saras152/Finding_Lane_Lines_on_the_Road). 
 
 ![alt text][lanelines]
 
