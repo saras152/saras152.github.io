@@ -16,7 +16,7 @@ I have many areas of interest - both technical and non-technical, just like ever
 
 ## ToC ##
 
-[Electro Mechanical Systems](#eelectro-mechanical-systems)
+[Electro Mechanical Systems](#electro-mechanical-systems)
 
 [Embedded Systems](#embedded-systems)
 
