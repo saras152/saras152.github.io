@@ -44,11 +44,20 @@ This is my attempt at magnetic gears with FEA simulations. Wiki page is coming u
 
 ![Layered approach][swlayers]![Layered approach][swlayers1]
 
-### Embedded File System Drivers ###
-Device Driver implementation for FAT32 File System. The corresponding wiki is [HERE](https://bitbucket.org/saras152/filesystem_fat/wiki/Home).
+### Bootloader ###
+#### File parsing ####
+Parsing the binary files for getting them ready for programming is explained [HERE](https://bitbucket.org/saras152/bootloader/wiki/Home)
 
 ### Embedded USB Host ###
 Implemented the USB HOST drivers on microcontroller ( already has USB physical layer). Corresponding wiki is [HERE](https://bitbucket.org/saras152/usbhost_embedded/wiki/Home).
+
+### Embedded File System Drivers ###
+#### FAT32 ####
+Device Driver implementation for FAT32 File System. The corresponding wiki is [HERE](https://bitbucket.org/saras152/filesystem_fat/wiki/Home).
+#### FAT16 ####
+Devide Driver implementation for FAT16 file system on SD card. The corresponding wiki is [HERE](https://bitbucket.org/saras152/filesystem_fat/wiki/FAT%2016)
+#### SD CARD ####
+Devide Driver implementation for SD card communications throug SPI. The corresponding wiki is [HERE](https://bitbucket.org/saras152/filesystem_fat/wiki/SD%20CARD)
 
 # Computer Vision #
 
