@@ -45,7 +45,7 @@ This is my attempt at magnetic gears with FEA simulations. Wiki page is coming u
 ![Layered approach][swlayers]![Layered approach][swlayers1]
 
 ### Bootloader ###
-*  [File parsing] (https://bitbucket.org/saras152/bootloader/wiki/Home)
+* [File parsing](https://bitbucket.org/saras152/bootloader/wiki/Home)
 
 ### Data Acquisition System ###
 
