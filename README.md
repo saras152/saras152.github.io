@@ -20,7 +20,7 @@ I have many areas of interest - both technical and non-technical, just like ever
 
 [Embedded Systems](#embedded-systems)
 
-[Computer Vision](#computer-vision)
+[Machine Learning](#machine-learning)
 
 [Statistical Modelling](#statistical-modelling)
 
@@ -54,9 +54,15 @@ This is my attempt at magnetic gears with FEA simulations. Wiki page is coming u
 * [Embedded FAT32 drivers](https://bitbucket.org/saras152/filesystem_fat/wiki/Home).
 * [Embedded FAT16 drivers](https://bitbucket.org/saras152/filesystem_fat/wiki/FAT%2016)
 
-# Computer Vision #
+# Machine Learning #
 
-I worked with OpenCV and tried to detect the lanelines on the road. In the wiki page linked below, I addressed few issues solved and listed possible improvements. The jupyter notebook with preliminary implementation of the algorithm using python script for detecting lane lines on the road is [HERE](https://github.com/saras152/Finding_Lane_Lines_on_the_Road). 
+### Traffic Sign Classification ###
+
+Used TensorFlow to classify few random images from the internet using the network trained using german traffic sign benchmarks. The corresponding wiki is [HERE](https://github.com/saras152/Traffic-Sign-Classifier).
+
+### Computer Vision ###
+
+Used OpenCV to detect the lanelines on the road. The corresponding wiki is [HERE](https://github.com/saras152/Finding_Lane_Lines_on_the_Road). 
 
 ![alt text][lanelines]
 
