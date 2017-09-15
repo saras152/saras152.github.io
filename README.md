@@ -59,6 +59,7 @@ This is my attempt at magnetic gears with FEA simulations. Wiki page is coming u
 ### Behavioral Cloning - driving the autonomous car in a simulator ###
 
 Used Keras to simulate the autonomous car to make it run around the track without any acidents. The corresponding wiki is [HERE](https://github.com/saras152/myBehavioralCloningProject).
+
 ![difficult corner](https://github.com/saras152/myBehavioralCloningProject/blob/master/images/autonomousSim_turn.gif)
 
 ### Traffic Sign Classification ###
@@ -81,8 +82,8 @@ I attempted stochastic modelling for sales prediction. The wiki below also inclu
 ## Polygon packing ##
 The 2D analysis for rlib required placing the wires in the motor slots, in some cases. I attempted to create circles in polygon. The wiki for it is [HERE](https://bitbucket.org/saras152/polygon_packing/wiki/Home).
 
-![alt text][Circles]
-
+![circles][Circles]
+![squares](https://bitbucket-assetroot.s3.amazonaws.com/repository/gk56KEE/1478215374-rectangular%20fitting.png?Signature=S%2FOZP%2BLCiNiyowFPNb0F9fR0r2Y%3D&Expires=1505446821&AWSAccessKeyId=AKIAIQWXW6WLXMB5QZAQ&versionId=NxtTAFGVBN.PVr4brj_cc2scGYcIWe7J)
 ## Spirographs and Harmonographs ##
 Created MATLAB script to generate some images for fun! The images are [HERE](https://bitbucket.org/saras152/harmonograph/wiki).
 
