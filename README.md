@@ -60,7 +60,7 @@ This is my attempt at magnetic gears with FEA simulations. Wiki page is coming u
 
 Used Keras to simulate the autonomous car to make it run around the track without any acidents. The corresponding wiki is [HERE](https://github.com/saras152/myBehavioralCloningProject).
 
-![difficult corner](https://github.com/saras152/myBehavioralCloningProject/blob/master/images/autonomousSim_turn.gif)
+![difficult corner](./images/autonomousSim_turn.gif)
 
 ### Traffic Sign Classification ###
 
