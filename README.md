@@ -1,7 +1,9 @@
 [//]: # (Image References)
 [Wires]: ./images/wires_in_slots1.jpg "Wires"
-[Circles]: ./images/circlepacking.gif "Circles"
+[Circles]: ./images/circlepacking.gif "Circles
+[squares]: ./images/rectangular_fitting.png "squares"
 [lanelines]: ./images/lanelines.gif "LaneLines"
+[lanes]: ./images/lanefinding.gif "lanes"
 [spirograph]: ./images/spirograph.png "Spirograph"
 [harmonograph]: ./images/harmonograph.png "Harmonograph"
 [stochasticmodelling]: ./images/stochasticmodelling.gif "Stochastic Modelling"
@@ -56,6 +58,12 @@ This is my attempt at magnetic gears with FEA simulations. Wiki page is coming u
 
 # Machine Learning #
 
+### Computer Vision - Lane Finding ###
+
+Used OpenCV's functionalities for camera calibration, distortion correction, perspective views and  warping, in combination with few  curve fitting functions to generate lane geometries from boundaries to identify the curvature and vehicle offset from lane center. The corresponding wiki is [HERE](https://github.com/saras152/myAdvancedLaneFinding).
+
+![lane lines][lanes]
+
 ### Behavioral Cloning - driving the autonomous car in a simulator ###
 
 Used Keras to simulate the autonomous car to make it run around the track without any acidents. The corresponding wiki is [HERE](https://github.com/saras152/myBehavioralCloningProject).
@@ -66,7 +74,7 @@ Used Keras to simulate the autonomous car to make it run around the track withou
 
 Used TensorFlow to classify few random images from the internet using the network trained using german traffic sign benchmarks. The corresponding wiki is [HERE](https://github.com/saras152/Traffic-Sign-Classifier).
 
-### Computer Vision ###
+### Computer Vision - Lane line identification ###
 
 Used OpenCV to detect the lanelines on the road. The corresponding wiki is [HERE](https://github.com/saras152/Finding_Lane_Lines_on_the_Road). 
 
@@ -83,7 +91,8 @@ I attempted stochastic modelling for sales prediction. The wiki below also inclu
 The 2D analysis for rlib required placing the wires in the motor slots, in some cases. I attempted to create circles in polygon. The wiki for it is [HERE](https://bitbucket.org/saras152/polygon_packing/wiki/Home).
 
 ![circles][Circles]
-![squares](https://bitbucket-assetroot.s3.amazonaws.com/repository/gk56KEE/1478215374-rectangular%20fitting.png?Signature=S%2FOZP%2BLCiNiyowFPNb0F9fR0r2Y%3D&Expires=1505446821&AWSAccessKeyId=AKIAIQWXW6WLXMB5QZAQ&versionId=NxtTAFGVBN.PVr4brj_cc2scGYcIWe7J)
+![squares][squares]
+
 ## Spirographs and Harmonographs ##
 Created MATLAB script to generate some images for fun! The images are [HERE](https://bitbucket.org/saras152/harmonograph/wiki).
 
