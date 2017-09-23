@@ -1,6 +1,6 @@
 [//]: # (Image References)
 [Wires]: ./images/wires_in_slots1.jpg "Wires"
-[Circles]: ./images/circlepacking.gif "Circles
+[Circles]: ./images/circlepacking.gif "Circles"
 [squares]: ./images/rectangular_fitting.png "squares"
 [lanelines]: ./images/lanelines.gif "LaneLines"
 [lanes]: ./images/lanefinding.gif "lanes"
