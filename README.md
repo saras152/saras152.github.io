@@ -81,7 +81,7 @@ Used OpenCV to detect the lanelines on the road. The corresponding wiki is [HERE
 ![alt text][lanelines]
 
 # Statistical Modelling #
-I attempted stochastic modelling for sales prediction. The wiki below also include a paper I tried to make out of the work done for this. The wiki is [HERE](https://bitbucket.org/saras152/marketmodellingstochastic/wiki/Home).
+I attempted stochastic modelling for sales prediction. The wiki below also includes a paper I tried to create out of the work done for this. The wiki is [HERE](https://bitbucket.org/saras152/marketmodellingstochastic/wiki/Home).
 
 ![Stochastic Modelling GIF][stochasticmodelling]
 
