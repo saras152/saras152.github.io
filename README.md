@@ -60,7 +60,7 @@ This is my attempt at magnetic gears with FEA simulations. Wiki page is coming u
 
 ### Vehicle detection and tracking
 
-Used hog, spacial binning and color histograms features along with the Support Vector Module to train a linear classifier to detect the cars in an image. Used the same pipeline to implement the vehicle tracking in a video. Corresponding wiki is [HERE](https://github.com/saras152/myVehicleDetection)
+Used hog, spacial binning and color histograms features along with the Support Vector Machine module to train a linear classifier to detect the cars in an image. Used the same pipeline to implement the vehicle tracking in a video. Corresponding wiki is [HERE](https://github.com/saras152/myVehicleDetection)
 
 ![multiple vehicles](./images/trackingvehicles.gif)
 
