@@ -33,7 +33,7 @@ I have many areas of interest - both technical and non-technical, just like ever
 
 ### Electric Machine Design ###
 
-I like to work with open source software. I used [Scilab](https://www.scilab.org/) and [FEMM](http://www.femm.info/wiki/HomePage) to build my personal tool to generate variety of elecitrc machines of BLDC Motors with surface mounted magnets (inner rotor, outer rotor), IPM Motors (inner rotor so far) and Synchronous Reluctance Motors (inner rotor so far). Also implemented parallel FEA computations for faster characterization of the motors. These models can be dynamically generated and can be fed to the optimization routine that I implemented based on random walk methods. I call this tool "rlib".  Please visit the wiki page for rlib [HERE](https://bitbucket.org/saras152/rlib/wiki).
+I like to work with open source software. I used [Scilab](https://www.scilab.org/) and [FEMM](http://www.femm.info/wiki/HomePage) to build my personal tool to generate variety of elecitrc machines of BLDC Motors with surface mounted magnets (inner rotor, outer rotor), IPM Motors (inner rotor so far) and Synchronous Reluctance Motors (inner rotor so far). Also implemented parallel FEA computations in some cases for faster characterization of the motors. These models can be dynamically generated and can be fed to the optimization routine that I implemented based on random walk methods. I call this tool "rlib".  Please visit the wiki page for rlib [HERE](https://bitbucket.org/saras152/rlib/wiki).
 
 ![alt text][Wires]
 <img src="./images/Prius_animated.gif" width="170" alt="Toyota Prius Traction Motor - |B| vs theta">
@@ -47,7 +47,7 @@ This is my attempt at magnetic gears with FEA simulations. Wiki page is coming u
 ![Layered approach][swlayers]![Layered approach][swlayers1]
 
 ### Bootloader ###
-* [File parsing](https://bitbucket.org/saras152/bootloader/wiki/Home)
+* [File parsing](https://bitbucket.org/saras152/bootloader/wiki/Home)s
 
 ### Data Acquisition System ###
 
@@ -57,6 +57,12 @@ This is my attempt at magnetic gears with FEA simulations. Wiki page is coming u
 * [Embedded FAT16 drivers](https://bitbucket.org/saras152/filesystem_fat/wiki/FAT%2016)
 
 # Machine Learning #
+
+### Vehicle detection and tracking
+
+Used hog, spacial binning and color histograms features along with the Support Vector Module to train a linear classifier to detect the cars in an image. Used the same pipeline to implement the vehicle tracking in a video. Corresponding wiki is [HERE](https://github.com/saras152/myVehicleDetection)
+
+![multiple vehicles](./images/trackingvehicles.gif)
 
 ### Computer Vision - Lane Finding ###
 
