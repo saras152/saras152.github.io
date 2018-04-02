@@ -18,9 +18,6 @@ I have several areas of interest - both technical and non-technical, just like e
 
 ## ToC ##
 
-<>[Electro Mechanical Systems](#electro-mechanical-systems)
-
-[Embedded Systems](#embedded-systems)
 
 [Machine Learning](#machine-learning)
 
@@ -28,33 +25,10 @@ I have several areas of interest - both technical and non-technical, just like e
 
 [Fun with Shapes](#fun-with-shapes)
 
+[Embedded Systems](#embedded-systems)
 
-<># Electro Mechanical Systems #
 
-<>### Electric Machine Design ###
 
-<>I like to work with open source software. I used [Scilab](https://www.scilab.org/), [FEMM](http://www.femm.info/wiki/HomePage), [Gmsh](http://gmsh.info/), [GetDP](http://getdp.info/), and [Elmer](https://www.csc.fi/web/elmer)  to build my personal tool to generate variety of elecitrc machines models of BLDC type with surface mounted magnets (inner rotor, outer rotor), IPM Motors (inner rotor so far) and Synchronous Reluctance Motors (inner rotor so far). Also implemented parallel FEA computations in some cases for faster characterization of the motors. These models can be dynamically generated and can be fed to the optimization routine (for FEMM based workflow) that I implemented based on random walk methods. I call this tool "rlib".  Please visit the wiki page for rlib [HERE](https://bitbucket.org/saras152/rlib/wiki).
-
-![alt text][Wires]
-<img src="./images/Prius_animated.gif" width="170" alt="Toyota Prius Traction Motor - |B| vs theta">
-
-### Magnetic Gears ###
-
-This is my attempt at magnetic gears with FEA simulations. Wiki page is coming up.
-
-# Embedded Systems #
-
-![Layered approach][swlayers]![Layered approach][swlayers1]
-
-### Bootloader ###
-* [File parsing](https://bitbucket.org/saras152/bootloader/wiki/Home)
-
-### Data Acquisition System ###
-
-* [Embedded USB Host Drivers](https://bitbucket.org/saras152/usbhost_embedded/wiki/Home).
-* [SD CARD Access through SPI](https://bitbucket.org/saras152/filesystem_fat/wiki/SD%20CARD)
-* [Embedded FAT32 drivers](https://bitbucket.org/saras152/filesystem_fat/wiki/Home).
-* [Embedded FAT16 drivers](https://bitbucket.org/saras152/filesystem_fat/wiki/FAT%2016)
 
 # Machine Learning #
 
@@ -106,3 +80,16 @@ Created a MATLAB script to generate some images for fun! More images are [HERE](
 ![alt text][spirograph]
 ![alt text][harmonograph]
 
+# Embedded Systems #
+
+![Layered approach][swlayers]![Layered approach][swlayers1]
+
+### Bootloader ###
+* [File parsing](https://bitbucket.org/saras152/bootloader/wiki/Home)
+
+### Data Acquisition System ###
+
+* [Embedded USB Host Drivers](https://bitbucket.org/saras152/usbhost_embedded/wiki/Home).
+* [SD CARD Access through SPI](https://bitbucket.org/saras152/filesystem_fat/wiki/SD%20CARD)
+* [Embedded FAT32 drivers](https://bitbucket.org/saras152/filesystem_fat/wiki/Home).
+* [Embedded FAT16 drivers](https://bitbucket.org/saras152/filesystem_fat/wiki/FAT%2016)
