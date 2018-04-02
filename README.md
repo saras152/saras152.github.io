@@ -18,7 +18,7 @@ I have several areas of interest - both technical and non-technical, just like e
 
 ## ToC ##
 
-[Electro Mechanical Systems](#electro-mechanical-systems)
+<>[Electro Mechanical Systems](#electro-mechanical-systems)
 
 [Embedded Systems](#embedded-systems)
 
@@ -29,11 +29,11 @@ I have several areas of interest - both technical and non-technical, just like e
 [Fun with Shapes](#fun-with-shapes)
 
 
-# Electro Mechanical Systems #
+<># Electro Mechanical Systems #
 
-### Electric Machine Design ###
+<>### Electric Machine Design ###
 
-I like to work with open source software. I used [Scilab](https://www.scilab.org/), [FEMM](http://www.femm.info/wiki/HomePage), [Gmsh](http://gmsh.info/), [GetDP](http://getdp.info/), and [Elmer](https://www.csc.fi/web/elmer)  to build my personal tool to generate variety of elecitrc machines models of BLDC type with surface mounted magnets (inner rotor, outer rotor), IPM Motors (inner rotor so far) and Synchronous Reluctance Motors (inner rotor so far). Also implemented parallel FEA computations in some cases for faster characterization of the motors. These models can be dynamically generated and can be fed to the optimization routine (for FEMM based workflow) that I implemented based on random walk methods. I call this tool "rlib".  Please visit the wiki page for rlib [HERE](https://bitbucket.org/saras152/rlib/wiki).
+<>I like to work with open source software. I used [Scilab](https://www.scilab.org/), [FEMM](http://www.femm.info/wiki/HomePage), [Gmsh](http://gmsh.info/), [GetDP](http://getdp.info/), and [Elmer](https://www.csc.fi/web/elmer)  to build my personal tool to generate variety of elecitrc machines models of BLDC type with surface mounted magnets (inner rotor, outer rotor), IPM Motors (inner rotor so far) and Synchronous Reluctance Motors (inner rotor so far). Also implemented parallel FEA computations in some cases for faster characterization of the motors. These models can be dynamically generated and can be fed to the optimization routine (for FEMM based workflow) that I implemented based on random walk methods. I call this tool "rlib".  Please visit the wiki page for rlib [HERE](https://bitbucket.org/saras152/rlib/wiki).
 
 ![alt text][Wires]
 <img src="./images/Prius_animated.gif" width="170" alt="Toyota Prius Traction Motor - |B| vs theta">
