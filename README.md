@@ -10,7 +10,7 @@
 [swlayers]: ./images/swlayers.png "Layered approach"
 [swlayers1]: ./images/RaNa_Target_Abstraction_Bootloader.png "layered approach"
 
-I have several areas of interest - both technical and non-technical, just like everyone else. Below are some of the areas that I have passion for and worked on. 
+I have several areas of interest - both technical and non-technical, just like everyone else. Below are some of the projects related to Machine Learning field, that I have spent time on. 
 
 ##### e-mail:hex2ascii(72h 61h 67h 68h 75h 2Eh 65h 6Ch 65h 63h 40h 67h 6Dh 61h 69h 6Ch 2Eh 63h 6Fh 6Dh) (written in hex just to avoid detection by web crawlers) #####
 
@@ -60,36 +60,3 @@ Used OpenCV to detect the lanelines on the road. The corresponding wiki is [HERE
 
 ![alt text][lanelines]
 
-# Statistical Modelling #
-
-I attempted stochastic modelling for sales prediction. Although this is a primitive model, I liked the way I was able to represent the bias visualization. The wiki below also includes a paper I tried to create out of the work done for this. This paper was not published. The wiki is [HERE](https://bitbucket.org/saras152/marketmodellingstochastic/wiki/Home).
-
-![Stochastic Modelling GIF][stochasticmodelling]
-
-# Fun with Shapes #
-
-## Polygon packing ##
-I attempted to pack polygons ( circles and rectangles) in a given polygon. The wiki for it is [HERE](https://bitbucket.org/saras152/polygon_packing/wiki/Home).
-
-![circles][Circles]
-![squares][squares]
-
-## Spirographs and Harmonographs ##
-Created a MATLAB script to generate some images for fun! More images are [HERE](https://bitbucket.org/saras152/harmonograph/wiki).
-
-![alt text][spirograph]
-![alt text][harmonograph]
-
-# Embedded Systems #
-
-![Layered approach][swlayers]![Layered approach][swlayers1]
-
-### Bootloader ###
-* [File parsing](https://bitbucket.org/saras152/bootloader/wiki/Home)
-
-### Data Acquisition System ###
-
-* [Embedded USB Host Drivers](https://bitbucket.org/saras152/usbhost_embedded/wiki/Home).
-* [SD CARD Access through SPI](https://bitbucket.org/saras152/filesystem_fat/wiki/SD%20CARD)
-* [Embedded FAT32 drivers](https://bitbucket.org/saras152/filesystem_fat/wiki/Home).
-* [Embedded FAT16 drivers](https://bitbucket.org/saras152/filesystem_fat/wiki/FAT%2016)
