@@ -21,13 +21,6 @@ I have several areas of interest - both technical and non-technical, just like e
 
 [Machine Learning](#machine-learning)
 
-[Statistical Modelling](#statistical-modelling)
-
-[Fun with Shapes](#fun-with-shapes)
-
-[Embedded Systems](#embedded-systems)
-
-
 
 
 # Machine Learning #
