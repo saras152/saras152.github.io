@@ -39,7 +39,7 @@ Used OpenCV's functionalities for camera calibration, distortion correction, per
 
 ### Behavioral Cloning - driving the autonomous car in a simulator ###
 
-Used Keras to simulate the autonomous car to make it run around the track without any acidents. The corresponding wiki is [HERE](https://github.com/saras152/myBehavioralCloningProject).
+Used Keras to simulate the autonomous car to make it run around the track without any accidents. The corresponding wiki is [HERE](https://github.com/saras152/myBehavioralCloningProject).
 
 ![difficult corner](./images/autonomousSim_turn.gif)
 
