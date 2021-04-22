@@ -12,7 +12,7 @@
 
 I have several areas of interest - both technical and non-technical, just like everyone else. Below are some of the projects related to Machine Learning field, that I have spent time on. 
 
-##### e-mail:hex2ascii(72h 61h 67h 68h 75h 2Eh 65h 6Ch 65h 63h 40h 67h 6Dh 61h 69h 6Ch 2Eh 63h 6Fh 6Dh) (written in hex just to avoid detection by web crawlers) #####
+e-mail: learn@redarm.in
 
 
 
