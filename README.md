@@ -17,9 +17,9 @@ e-mail: learn@redarm.in
 
 
 ## ToC ##
+{:toc}
 
 
-[Machine Learning](#machine-learning)
 
 
 
