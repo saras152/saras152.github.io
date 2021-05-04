@@ -40,12 +40,14 @@
 	To move around, w,a,s,d keys can be used.
 	To change viewheight, q,e can be used.
 	Server is open, and waiting for conenction with the client. 
+	
 ## 5. command line options
 	-carla-rpc-port=N listen to client on port #N, streaming port is N+1
 	-carla-streaming-port=N port for sending sensor data. use 0 fro random unused port. second port is N+1. 
 	-quality-level={Low,Epic} to change graphics quality level 
 	PythonAPI/util/config.py this script gives more command-line options
 		python config.py --help # Check all the available configuration options
+		
 ## 6. selecting GPUs on linux
 	SDL_VIDEODRIVER=offscreen SDL_HINT_CUDA_DEVICE=0 ./CarlaUE4.sh -> in linux. need to check for windows. 
 	Alternatively
@@ -56,6 +58,7 @@
 	run auxillary virtual x-server -> /opt/TurboVNC/bin/vncserver :8
 	run on GPU 0 -> DISPLAY=:8 vglrun -d :7.0 glxinfo
 	DISPLAY=:8 vglrun -d :7.<gpu_number> $CARLA_PATH/CarlaUE4/Binaries/Linux/CarlaUE4
+	
 ## 7. running on dockers
 	requirements Docker CE or Nvidia docker-2
 	pull a version -> docker pull carlasim/carla:0.8.2
@@ -65,30 +68,36 @@
 		  add -world-port=<port_number> so that CARLA runs on server mode listening to the <port_number>
 	
 ## 8. Understand timesteps
+
 ### Varaible time step is the default mode in carla. The sim time between steps is the time server takes to compute
 			settings = world.get_settings()
 			settings.fixed_delta_seconds = None # Set a variable time-step
 			world.apply_settings(settings)
 		in the fiel PythonAPI/util/config.py timestep value 0 means varaible timestep
 			cd PythonAPI/util && python3 config.py --delta-seconds 0
+			
 ### Fixed time step
 			settings = world.get_settings()
 			settings.fixed_delta_seconds = 0.05
 			world.apply_settings(settings)
 		or
 			cd PythonAPI/util && python3 config.py --delta-seconds 0.05
+
 ### Physics substepping is important for calcupating physics for all objects within the timeframes
 			settings = world.get_settings()
 			settings.substepping = True
 			settings.max_substep_delta_time = 0.01
 			settings.max_substeps = 10
 			world.apply_settings(settings)
+
 ### condition to be satisfied is 
 			fixed_delta_seconds <= max_substep_delta_time * max_substeps
 		For optimal physics simulation, substep delta below 0.016666, ideally below 0.01. 
+
 ## 9. Carla synchronization
 	Default is asynchronous mode -> server runs the sim as fast as possible wihtout waiting for the client
-  ### in the synchronous mode, the server waits for the client's (tick)ok message before updating the next sim step.
+ 
+### in the synchronous mode, the server waits for the client's (tick)ok message before updating the next sim step.
 		in multi-client env, only one client should tick. 
 			settings = world.get_settings()
 			settings.synchronous_mode = True # Enables synchronous mode
@@ -100,17 +109,21 @@
 			dont use varaible tiem step with synchronous mode. 
 		when using asychronous mode, use fixed time step. server will run as fast as possible. can sim longer periods of time 
 		when using asynchronous mode, use vriable time step. this si the default carla state. 
+
 ## 10. The world and client
+
 ### the client is 
 		the module that user runs to ask for info or changes in teh sim. 
 		Client runs with an IP on a port. 
 		communicates with the server via terminal. 
 		Many clients can exist at the same time. 
+
 ### the world is
 		an object representing the sim. 
 			it acts as abstract layer with main methods to spawn actors, change weather, get current state of thw rodl,etc. 
 			only one world per sim. 
 			destryoed and new one is created when the map is changed. 
+
 ### actors
 		anything that plays a role in the sim
 			vehicles
@@ -118,11 +131,13 @@
 			sensors
 			spectators
 			traffic signs, lights
+
 ### Blueprints are 
 			already made actor layouts that are necessary to spawn an actor. 
 			models with animations and set of attributes
 			attributes can be customized by users. 
 			refer to blueprint library
+
 ### maps and navigation
 		map is 
 			object represtnging the sim world, mostly town.
@@ -131,6 +146,7 @@
 			Used along with Waypoint class to privide vehicles with a navigation path. 
 			traffic signs, traffic lights are accessible as carla.Landmark objects that have info about their opendrive def. 
 			the sim generates the stops, yields, and traffic light objects when runnign using the info on opendrive file. 
+
 ### sensors and data
 		sensors 
 			wait for some events to happen, and gather data from sim
@@ -138,9 +154,12 @@
 			is an actor attached to parent vehicle. 
 				follows the vehicle around, gathering info from vehicle and surroundinsg. 
 				cameras, collision detector, gnss, imu, lidar, lane invasion detector, obstacle detector, radar, rss. 
+
 ## 11. custom maps with openstreetmaps
 	goto openstreetmap.org export the map region as osm file
+
 ### multi-step appraoch
+
 #### run teh code to generate xodr file (opendrive file)
 			# Read the .osm data
 			f = open("path/to/osm/file", 'r') # Windows will need to encode the file in UTF-8. Read the note below. 
@@ -156,6 +175,7 @@
 			f = open("path/to/output/file", 'w')
 			f.write(xodr_data)
 			f.close()
+
 #### improt the map to carla
 			using custom script
 				vertex_distance = 2.0  # in meters
@@ -170,27 +190,36 @@
 						additional_width=extra_width,
 						smooth_junctions=True,
 						enable_mesh_visibility=True))
+
 ### import using config.py
 			python3 config.py --osm-path=/path/to/OSM/file
+
 ## 12. sim data
+
 ### start the sim by running carla
 		carlaue4.exe
+
 ### map setting from one client, from the util folder
 		python config.py --map Town10
+
 ### weather setting from the example folder
 		python dynamic_weather.py --speed 1.0
 		for custom conditions, use environment.py from util folder
 			python3 environment.py --clouds 100 --rain 80 --wetness 100 --puddles 60 --wind 80 --fog 50
+
 ### set traffic
 		traffic manager module handles traffic. pedestrians are handled by carla.walkeraicontroller
 		python3 spawn_npc.py -n 50 -w 50 --safe // for 50 vehicles and 50 walkers
+
 ### SUMO co-simulaiton
 		bidirectional. spawning in carla also spawns in sumo. 
 		install, and set the environment variable SUMO_HOME, run sumo-carla synchrony script from co-simulation/sumo folder
 			python3 run_synchronization.py examples/Town01.sumocfg --sumo-gui
 			Sumo window opens. press 'play' to start traffic in both sims. 
+
 ### set the ego vehicle
 		refer to tutorial_ego.py
+
 #### spawns ego vehicle, soem sensors, records simulation until user finishes the script
 				role_name is set to ego. 
 				# --------------
@@ -213,6 +242,7 @@
 					print('\nEgo is spawned')
 				else: 
 					logging.warning('Could not found any spawn points')
+
 #### place the spectators
 				# --------------
 				# Spectator on ego position
@@ -227,6 +257,7 @@
 				try with RGB camera
 					some attributes are focal_distance, shutter_speed, gamma, lens_cricle_multiplier, etc. 
 					# --------------
+
 #### # Spawn attached RGB camera
 					# --------------
 					cam_bp = None
@@ -242,6 +273,7 @@
 				try some detectors
 					some attributes are sensor_tick, distance, hit radius, only_dynamics, etc. 
 					# --------------
+
 #### # Add collision sensor to ego vehicle. 
 					# --------------
 
@@ -255,6 +287,7 @@
 					ego_col.listen(lambda colli: col_callback(colli))
 
 					# --------------
+
 #### # Add Lane invasion sensor to ego vehicle. 
 					# --------------
 
@@ -268,6 +301,7 @@
 					ego_lane.listen(lambda lane: lane_callback(lane))
 
 					# --------------
+
 #### # Add Obstacle sensor to ego vehicle. 
 					# --------------
 
@@ -282,6 +316,7 @@
 					ego_obs.listen(lambda obs: obs_callback(obs))
 				other sensors
 					# --------------
+
 #### # Add GNSS sensor to ego vehicle. 
 					# --------------
 
@@ -296,6 +331,7 @@
 					ego_gnss.listen(lambda gnss: gnss_callback(gnss))
 
 					# --------------
+
 #### # Add IMU sensor to ego vehicle. 
 					# --------------
 
@@ -310,6 +346,7 @@
 					ego_imu.listen(lambda imu: imu_callback(imu))
 				advanced sensors - depth sensor
 					# --------------
+
 #### # Add a Depth camera to ego vehicle. 
 					# --------------
 					depth_cam = None
@@ -322,6 +359,7 @@
 					depth_cam.listen(lambda image: image.save_to_disk('tutorial/new_depth_output/%.6d.jpg' % image.frame,carla.ColorConverter.LogarithmicDepth))
 				semantic segmentations ensor
 					# --------------
+
 #### # Add a new semantic segmentation camera to my ego
 					# --------------
 					sem_cam = None
@@ -337,6 +375,7 @@
 					sem_cam.listen(lambda image: image.save_to_disk('tutorial/new_sem_output/%.6d.jpg' % image.frame,carla.ColorConverter.CityScapesPalette))
 				Lidar ray cast sensor
 					# --------------
+
 #### # Add a new LIDAR sensor to my ego
 					# --------------
 					lidar_cam = None
@@ -354,6 +393,7 @@
 					install meshlab. and import the ply files into meshlab. 
 				RADAR sensor
 					# --------------
+
 #### # Add a new radar sensor to my ego
 					# --------------
 					rad_cam = None
@@ -395,9 +435,11 @@
 								persistent_lines=False,
 								color=carla.Color(r, g, b))
 					rad_ego.listen(lambda radar_data: rad_callback(radar_data))
+
 #### No rendering mode
 					good for initial simulations that can be replayed to retrieve data
 					useful for situations when the simulation has extreme conditions such as dense traffic. 
+
 #### simulate at fast pace
 					disabling render quickens the sim. 
 					GPU is not used, so server qoeks at full speed. 
@@ -405,17 +447,21 @@
 					limitation would be the inner logic of the server
 					run the fixed time step, and disable rendering, asynchronous mode is already active. 
 						python3 config.py --no-rendering --delta-seconds 0.05 # Never greater than 0.1s
+
 #### manual control w/o rendering
 					no_rendering_mode provides overview of sim. gives minimislictic arial view with pygame. 
 					can be used aling with manual-control to generate a route, rrecord, and play back to gather data. 
 						python3 manual_control.py
 						python3 no_rendering_mode.py --no-rendering
+
 ### record and retrieve data
+
 #### start recording into CarlaUE4/Saved
 			# --------------
 			# Start recording
 			# --------------
 			client.start_recorder('~/tutorial/recorder/recording01.log')
+
 #### enable auto pilot
 			# --------------
 			# Capture data
@@ -424,11 +470,14 @@
 			print('\nEgo autopilot enabled')
 			while True:
 				world_snapshot = world.wait_for_tick()
+
 #### manual control
 			run manual_control.py in one client, and recorder in anotehr one. 
 			to avoid rendering and save computational cost, enable no-rendering mode. no_rendering_mode.py creates a simple arial view. 
+
 #### stop recording
 			client.stop_recorder()
+
 #### examine the recording
 			./CarlaUE4.sh
 			python3 tuto_replay.py
@@ -436,6 +485,7 @@
 				# Reenact a fragment of the recording
 				# --------------
 				client.replay_file("~/tutorial/recorder/recording01.log",45,10,0)
+
 #### query the events
 				# --------------
 				# Query the recording
@@ -446,6 +496,7 @@
 				print(client.show_recorder_actors_blocked("~/tutorial/recorder/recording01.log",10,1))
 				# Filter collisions between vehicles 'v' and 'a' any other type of actor.  
 				print(client.show_recorder_collisions("~/tutorial/recorder/recording01.log",'v','a'))
+
 ## 13. tutorial_ego.py
 		import glob
 		import os
@@ -675,6 +726,7 @@
 			finally:
 				print('\nDone with tutorial_ego.')
 	
+
 ## 14. tutorial_replay.py
 		import glob
 		import os
@@ -924,4 +976,5 @@
 				pass
 			finally:
 				print('\nDone with tutorial_replay.')
+
 ## 15. create custom vehicles
