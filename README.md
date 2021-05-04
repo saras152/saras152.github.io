@@ -16,7 +16,7 @@ e-mail: learn@redarm.in
 
 
 
-## ToC ##
+* toc
 {:toc}
 
 
