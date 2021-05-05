@@ -980,4 +980,109 @@
 			finally:
 				print('\nDone with tutorial_replay.')
 
+
 ## 15. create custom vehicles
+
+### a detailed description is at this link
+	https://carla.readthedocs.io/en/0.9.11/tuto_A_add_vehicle/#add-a-4-wheeled-vehicle
+	
+## 16. map customization
+ 
+### deatiled instruction are at
+	https://carla.readthedocs.io/en/0.9.11/tuto_A_map_customization/
+	
+
+	
+## 17. client creation
+		two things are needed, ip address, and two TCP ports. pythonAPI is used as below. 
+			client = carla.Client('localhost', 2000)
+			client.set_timeout(10.0) # seconds, time out to be set so that the orpeations dont block the client forever. 
+		many clients can be connected at the same. more than one script can be running at the same time. 
+		both server and clients need to have same libcarla versions. to be checked with 
+			 get_client_version() and get_server_version() methods
+			 
+### world conenction
+		client can connect to the world	
+			world = client.get_world()
+		client can also get a list of available maps. the current one gets destroyed and new one gets created
+			print(client.get_available_maps())
+			...
+			world = client.load_world('Town01')
+			# client.reload_world() creates a new instance of the world with the same map. 
+			
+### using commands
+		commands can be applied in batches too
+			Client.apply-batch or Client.apply_batch_sync(), a list of commands can be applied in single sim step. 
+				client.apply_batch([carla.command.DestroyActor(x) for x in vehicles_list])
+			the command.SetAutopilot is equivalent to Vehicle.set_autopilot(), enables the autopilot for a vehicle
+
+## 18. the world
+		this is the major ruler of the sim. 
+		most of the info, general settings can be accessed from this class. 
+			Actors in the simulation and the spectator. Blueprint library. Map. Simulation settings. Snapshots. Weather and light manager.
+			
+### actors
+	 the world has different methods for actors for different functionalities
+		Spawn actors (but not destroy them). Get every actor on scene, or find one in particular. Access the blueprint library. Access the spectator actor, the simulation's point of view. Retrieve a random location that is fitting to spawn an actor.
+		
+
+### Weather
+	not a class on its own, but a set of parameters accessible from the world.
+	includes sun orientation, cloudiness, wind, fog, etc. 
+		weather = carla.WeatherParameters(
+			cloudiness=80.0,
+			precipitation=30.0,
+			sun_altitude_angle=70.0)
+		world.set_weather(weather)
+		print(world.get_weather())
+	or 
+		world.set_weather(carla.WeatherParameters.WetCloudySunset)
+	environmeny.py or dynamic_weather.py can be used to change these conditions 
+	
+### Lights
+	street lights automaticalyl turn on when the sim enters night mode. 
+	map devs place thelights. 
+	lightmanager can be used to handle groups of lights in one call 
+		# Get the light manager and lights
+		lmanager = world.get_lightmanager()
+		mylights = lmanager.get_all_lights()
+
+		# Custom a specific light
+		light01 = mylights[0]
+		light01.turn_on()
+		light01.set_intensity(100.0)
+		state01 = carla.LightState(200.0,red,carla.LightGroup.Building,True)
+		light01.set_light_state(state01)
+		# Custom a group of lights
+		my_lights = lmanager.get_light_group(carla.LightGroup.Building)
+		lmanager.turn_on(my_lights)
+		lmanager.set_color(my_lights,carla.Color(255,0,0))
+		lmanager.set_intensities(my_lights,list_of_intensities)
+	vehicle lights have to be turned on/off by the user. each vehicle ahs a set of lights. 
+
+### debugging
+	wrld objects have carla.DebugHelper to allow different shapes be drawn during sim. 
+	the following example drawsred box at an actor's location and rotation
+		debug = world.debug
+		debug.draw_box(carla.BoundingBox(actor_snapshot.get_transform().location,carla.Vector3D(0.5,0.5,2)),actor_snapshot.get_transform().rotation, 0.05, carla.Color(255,0,0,0),0)\
+
+### world snapshots
+	contains every state of every actor in the sim at a single frame. 
+	this is a sort of still image of the world with time ref. 
+		# Retrieve a snapshot of the world at current frame.
+		world_snapshot = world.get_snapshot()
+	the snapshot lists the id of actors apeparing in it. 
+		timestamp = world_snapshot.timestamp # Get the time reference 
+
+		for actor_snapshot in world_snapshot: # Get the actor and the snapshot information
+			actual_actor = world.get_actor(actor_snapshot.id)
+			actor_snapshot.get_transform()
+			actor_snapshot.get_velocity()
+			actor_snapshot.get_angular_velocity()
+			actor_snapshot.get_acceleration()  
+
+		actor_snapshot = world_snapshot.find(actual_actor.id) # Get an actor's snapshot
+		
+## actors and blueprints
+
+###	
